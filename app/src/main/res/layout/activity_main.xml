@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:divider="@drawable/empty_tall_divider"
+    android:orientation="vertical"
+    android:showDividers="middle"
+    tools:context=".MainActivity">
+<TextView
+    android:textSize="21dp"
+    android:text="@string/from"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+    <Spinner
+        android:layout_gravity="center"
+        android:id="@+id/spFrom"
+        android:minWidth="200dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></Spinner>
+    <TextView
+        android:text="@string/to"
+        android:textSize="21dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Spinner
+        android:layout_gravity="center"
+        android:id="@+id/spTo"
+        android:layout_width="wrap_content"
+        android:minWidth="200dp"
+        android:layout_height="wrap_content"></Spinner>
+
+
+    <Button
+
+        android:id="@+id/btnConvert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/currency" />
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+</LinearLayout>
